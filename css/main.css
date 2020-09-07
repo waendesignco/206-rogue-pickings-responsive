@@ -1,0 +1,221 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+  padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+header h1 {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 3px solid #77a466;
+	text-align: center;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 10px 0;
+	text-align: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	line-height: 3em;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.563em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.313em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	border-top: 3px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+/****** Tablets ******/
+@media (min-width: 768px) {
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		flex-flow: row nowrap;
+	}
+}
+
+/****** desktops ******/
+@media (min-width: 1200px) {
+	header {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-flow: row nowrap;
+	}
+
+	header h1 {
+		width: 50%;
+		padding: 10px 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 50%;
+		padding: 10px 0;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	header nav ul li {
+    padding: 0 0.5em;
+  }
+}
